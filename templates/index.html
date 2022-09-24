@@ -17,12 +17,29 @@
         <div class=" contador">
         <h3>{{session['count']}} Time(s)</h3>
 
-
+    </div>
+    <div class="cont2">
         <a href="/"><input type="submit" value="Click + 2" class="btn btn-primary"> </a>
         
         <a href="/destroy_session"><input type="submit" value="Reset" class="btn btn-success"></a>  
     </div>
 
+
+        <!-- FORMULARIO INCREMENTO + NÚMERO -->
+    <div class= "formulario  col-6 text-center mx-auto"> 
+
+    <form action="/incremento" method= 'post' >
+
+        <label  for="numero"> <h3>Incrementa el numero aca!  </h3> </label>
+
+   
+        <input type="text"  name="numero" class="form-contol" id="numero">
+        <!-- <a href="/incremento"><input type="button"  type="submit" value="Enviar" class="btn btn-dark"></a> -->
+    
+
+    </form>
+
+    </div>
 
     </div>
 

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, redirect 
+from flask import Flask, render_template, session, redirect, request
 app = Flask(__name__)
 app.secret_key= "Que pasa perross"
 
@@ -21,10 +21,15 @@ def destroy_session():
     # session.pop('key_name')		
 
 
+@app.route('/incremento',  methods= ['post'])
+
+def incremento():
 
 
 
+        session['count']+= int(request.form['numero'])-1
 
+        return redirect('/')
 
 
 
